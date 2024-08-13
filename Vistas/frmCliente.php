@@ -30,10 +30,10 @@
           <a class="nav-link" href="/prestamos/index?clase=controladorprivado&metodo=inicio">Inicio</a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="/prestamos/index?clase=controladorcliente&metodo=AgregarMovimientos&op=1">Retiros</a>
+          <a class="nav-link" href="/prestamos/index?clase=controladorcliente&metodo=AgregarMovimientos&op=1">Abono</a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="/prestamos/index?clase=controladorcliente&metodo=AgregarMovimientos&op=2">Depósitos</a>
+          <a class="nav-link" href="/prestamos/index?clase=controladorcliente&metodo=AgregarMovimientos&op=2">Prestamo</a>
         </li>
         <li class="nav-item active">    
           <a class="nav-link" href="/prestamos/index?clase=controladorreportes&metodo=reporteCuenta&op=3">Estado de cuenta</a>

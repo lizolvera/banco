@@ -11,23 +11,18 @@ class controladorcliente {
         $datoNombre = $_SESSION['nombre'];
 
         // Obtener el número de cuenta del cliente logueado
-        $numerodeCuenta = $cliente->obtenerNumerodeCuenta($datoID);
         $aidiCliente = $cliente->obtenerIdCliente($datoID);
-        $nomvreCliente = $cliente->obtenerNombreCliente($datoID);
 
         // Verificar los valores antes de la comparación
-    //var_dump($datoNombre, $nomvreCliente);
 
         if (!empty($_POST)) {
             
-            $idC = $_POST['txtid'];
-            $nomC = $_POST['txtnombre'];
-            $noC = $_POST['txtNoCuenta'];
-            $total = $_POST['txtTotal'];
+            $idC = $_POST['txtId'];
+            $prestamoC = $_POST['txtPrestamo'];
 
             // Verificar si el número de cuenta ingresado es igual al del cliente logueado
             // son 3 === para ver si el valor como el tipo de datos son iguales 
-            if ($noC === $numerodeCuenta && $nomC === $nomvreCliente && $idC === $aidiCliente) {
+            if ($idC === $aidiCliente) {
                 // Obtener el saldo actual de la cuenta
                 $saldoActual = $cliente->obtenerSaldo($noC);
                 $saldo = $saldoActual;

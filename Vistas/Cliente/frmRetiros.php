@@ -2,7 +2,7 @@
   <div class="container text-justify">
     <div class="row contactos p-3">
       <div class="col-6 text-center">
-        <h2>RETIROS</h2>
+        <h2>ABONOS</h2>
         
         <div class="position-relative d-inline-block">
           <img src="img/tarjeta.png" class="card-img-top img">
@@ -10,7 +10,7 @@
             <!-- Aquí se mostrará el número de cuenta -->
           </div>
         </div>
-        <p>gadiel.ramos@uthh.edu.mx</p>
+        <p>20221019@uthh.edu.mx</p>
       </div>
       <div class="col-6">
         <form action="/Banco/index?clase=controladorcliente&metodo=AgregarMovimientos" method="post" name="form1" id="form1" enctype="multipart/form-data">
@@ -19,25 +19,12 @@
             <label for="exampleFormControlTextarea1">Id Cliente</label>
             <input type="text" name="txtid" value="<?php echo $datoID; ?>" class="form-control" placeholder="ingresa tu id" maxlength="4" onkeypress="return soloNumeros(event)">
           </div>
+          
           <div class="form-group">
-            <label for="exampleFormControlTextarea1">Nombre Cliente</label>
-            <input type="text" name="txtnombre" value="<?php echo $datoNombre; ?>" class="form-control" placeholder="ingresa el nombre del cliente" maxlength="50" pattern="[A-Za-z ]*" title="Solo se permiten letras">
+            <label for="exampleFormControlTextarea1">Ingresa la cantidad a Abonar</label>
+            <input type="text" name="txtTotal" class="form-control" placeholder="Ingresa la cantidad a abonar" maxlength="6" onkeypress="return soloNumeros(event)">
           </div>
-
-          <div class="form-group">
-            <label for="exampleFormControlTextarea1">No. Cuenta</label>
-            <input type="text" name="txtNoCuenta" value="<?php echo $numerodeCuenta; ?>" class="form-control" placeholder="Ingresa el No de Cuenta" maxlength="16" onkeypress="return soloNumeros(event)" oninput="actualizarNumeroCuenta(this.value)">
-          </div>
-
-          <!-- <div class="form-group">
-            <label for="exampleFormControlTextarea1">Ingresa el No. Cuenta</label>
-            <input type="text" name="txtNoCuenta" class="form-control" placeholder="Ingresa el No de Cuenta" maxlength="16" onkeypress="return soloNumeros(event)" oninput="actualizarNumeroCuenta(this.value)">
-          </div> -->
-          <div class="form-group">
-            <label for="exampleFormControlTextarea1">Ingresa la cantidad a Retirar</label>
-            <input type="text" name="txtTotal" class="form-control" placeholder="Ingresa la cantidad a retirar" maxlength="6" onkeypress="return soloNumeros(event)">
-          </div>
-          <input type="submit" name="btnRetirar" value="Retirar" class="btn btn-outline-primary">
+          <input type="submit" name="btnRetirar" value="Abonar" class="btn btn-outline-primary">
         </form>
       </div>
     </div>

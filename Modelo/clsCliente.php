@@ -3,12 +3,19 @@ include_once 'Modelo/clsconexion.php';
 
 class clsCliente extends clsconexion{
 
-	public function RealizarMovimientos($noC,$total,$movimiento) {
+	public function RealizarMovimientos($idC,$total,$movimiento) {
 		$result = $this->conectar->query("CALL spInsertaMovimientos('$noC',$total,'$movimiento');");
 		
 		return $result;   
 	}
+    public function obtenerIdCliente($idCliente) {
+        $result = $this->conectar->query("SELECT idcliente FROM tblclientes WHERE idcliente = '$idCliente'");
+        $idDelCliente = $result->fetch_assoc();
+        return $idDelCliente['idcliente'];
+    }
+
 ///esto le añadi yo
+/* 
     public function obtenerSaldo($noC) {
         $result = $this->conectar->query("SELECT fltsaldo FROM tblcuenta WHERE vchnum_cuenta = '$noC'");
         $traerSaldo = $result->fetch_assoc();
@@ -33,8 +40,8 @@ class clsCliente extends clsconexion{
         $nombreDelCliente = $result->fetch_assoc();
         return $nombreDelCliente['vchNombre'];
     } 
-
-    /* public function obtenerSaldo($noC) {
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& aparte
+    public function obtenerSaldo($noC) {
         $result = $this->conectar->query("CALL obtenerSaldo('$noC')");
         $traerSaldo = $result->fetch_assoc();
         $result->free();
