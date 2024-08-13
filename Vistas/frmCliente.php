@@ -23,7 +23,7 @@
 <!-- Este es el menú -->
 <nav class="cabecera-color navbar navbar-expand-lg navbar-dark p-4">
   <div class="container">
-    <a href="#"><img src="img/Logo1.png" alt="logo black fire" class="tamaño"></a>
+    <a href="#"><img src="img/bbva-logoazul2.png" alt="logo black fire" class="tamaño"></a>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
@@ -61,7 +61,7 @@
 <!-- Este es el pie de la pagina -->
 <footer>
     <div class="text-center">
-        <p> &copy; Sitio desarrollado por GRH 2019 - <?php date('d-m-Y H:i') ?> </p>
+        <p> &copy; Sitio desarrollado por Oscar y Lizbet 2024 - <?php date('d-m-Y H:i') ?> </p>
     </div>
 </footer>
 

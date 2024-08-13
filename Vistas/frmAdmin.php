@@ -29,10 +29,10 @@
           <a class="nav-link" href="/prestamos/index?clase=controladorprivado&metodo=inicio">Inicio</a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="/prestamos/index?clase=controladorcliente&metodo=AgregarMovimientos&op=1">Retiros</a>
+          <a class="nav-link" href="/prestamos/index?clase=controladorprestamos&metodo=reporteCuenta&op=1">Alta Prestamos</a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="/prestamos/index?clase=controladorcliente&metodo=AgregarMovimientos&op=2">Depósitos</a>
+          <a class="nav-link" href="/prestamos/index?clase=controladorcliente&metodo=AgregarMovimientos&op=2">Alta Clientes</a>
         </li>
         <li class="nav-item active">    
           <a class="nav-link" href="/prestamos/index?clase=controladorreportes&metodo=reporteCuenta&op=3">Estado de cuenta</a>
@@ -60,7 +60,7 @@
 <!-- Este es el pie de la pagina -->
 <footer>
     <div class="text-center">
-        <p> &copy; Sitio desarrollado por GRH 2019 - <?php date('d-m-Y H:i') ?> </p>
+        <p> &copy; Sitio desarrollado por Oscar y Lizbet 2024 - <?php date('d-m-Y H:i') ?> </p>
     </div>
 </footer>
 

@@ -7,7 +7,7 @@
 					<h1> ESTA ES UNA ZONA RESTRINGIDA ÚNICAMENTE PARA LOS CLIENTES </h1>
 					<hr>
 					<p> Maneja la información con estricta confidencialidad, si requiere ayuda maraque al 55551252142 las 24 horas del día.</p>
-					<p> <img src="img/Robo.jpeg" class="card-img-top img"> </p>
+					<p> <img src="img/fraude-digital.jpg" class="card-img-top img"> </p>
 					<p> No le proporcione información sobre cuentas bancarias a ninguna persona.</p>
 					
 				</div>
