@@ -3,7 +3,7 @@
 class clsconexion{
 
     private $servidor='localhost';
-    private $Base='bdbanco';
+    private $Base='bdbienestar';
     private $usuario='root';
     private $passw='';
 

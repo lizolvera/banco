@@ -24,9 +24,11 @@
             <li class="nav-item active">
                 <a class="nav-link" href="/Banco/index?clase=controladorpublico&metodo=inicio">Inicio </a>
             </li>
-            <li class="nav-item active">
+            
+            <!--<li class="nav-item active">
                 <a class="nav-link" href="/Banco/index?clase=controladorpublico&metodo=Anuncios">Anuncios</a>
-            </li>
+            </li>-->
+
             <li class="nav-item active">
                 <a class="nav-link" href="/Banco/index?clase=controladorpublico&metodo=login">Login</a>
             </li>

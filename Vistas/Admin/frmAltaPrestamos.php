@@ -16,11 +16,22 @@
           
         <div class="form-group">
             <label for="exampleFormControlTextarea1">Ingresa cantidad de Prestamo</label>
-            <input type="text" name="txtNoCuenta" value="<?php echo $numerodeCuenta; ?>" class="form-control" placeholder="Ingresa el No de Cuenta" maxlength="16" onkeypress="return soloNumeros(event)" oninput="actualizarNumeroCuenta(this.value)">
+            <input type="text" name="txtPrestamo" class="form-control" placeholder="Ingresa la cantidad de prestamo" maxlength="16" onkeypress="return soloNumeros(event)">
           </div>
-          <input type="submit" name="btnVer" value="Ver" class="btn btn-outline-primary">
+          <input type="submit" name="btnAltaP" value="Ver" class="btn btn-outline-primary">
         </form>
       </div>
     </div>
   </div>
 </section>
+<script>
+  ///funcion para permitir solo numeros
+   function soloNumeros(event) {
+    var charCode = (event.which) ? event.which : event.keyCode;
+    if (charCode < 48 || charCode > 57) {
+        event.preventDefault();
+        return false;
+    }
+    return true;
+  }
+</script>
