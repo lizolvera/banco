@@ -6,7 +6,7 @@
             
             <div class="form-group">
                 <label for="exampleInputPassword1">Ingrese su Usuario</label>
-                <input type="password" name="txtNIP" class="form-control" id="exampleInputPassword1" placeholder="Ingrese su usuario">
+                <input type="password" name="txtNombre" class="form-control" id="exampleInputPassword1" maxlength="120" placeholder="Ingrese su usuario">
             </div>
             <button type="submit" class="btn btn-primary">Enviar</button>
                 

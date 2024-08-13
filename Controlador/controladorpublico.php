@@ -1,6 +1,5 @@
 <?php
 include_once 'Modelo/clslogin.php';
-include_once 'Modelo/clsAnuncios.php';
 
 class controladorpublico
 {
@@ -11,14 +10,7 @@ class controladorpublico
 		$vista="Vistas/Inicio/frmcontenidopublico.php";
         include_once("Vistas/frmpublica.php");
 	}	
-	public function Anuncios()
-	{	
-		$info=new clsAnuncios();
-		$todoslosproductos = $info->mostrarAnuncios();
-				
-		$vista="Vistas/Publica/frmAnuncios.php";
-        include_once("Vistas/frmpublica.php");
-	}	
+	
 	public function login()
 	{
 		
@@ -36,7 +28,7 @@ class controladorpublico
 		    {
 		      	session_start();
 		        $_SESSION['id']=$datos['idcliente'];
-		        $_SESSION['nombre']=$datos['vchnombre'];
+		        $_SESSION['nombre']=$datos['Nombre'];
 		       	$vista="Vistas/Inicio/frmcontenidoCliente.php";
         		include_once("Vistas/frmCliente.php");
         		
