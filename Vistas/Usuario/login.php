@@ -6,13 +6,11 @@
             
             <div class="form-group">
                 <label for="exampleInputPassword1">Ingrese su Usuario</label>
-                <input type="password" name="txtNombre" class="form-control" id="exampleInputPassword1" maxlength="120" placeholder="Ingrese su usuario">
+                <input type="text" name="txtNombre" class="form-control" id="exampleInputPassword1" maxlength="120" placeholder="Ingrese su usuario">
             </div>
-            <button type="submit" class="btn btn-primary">Enviar</button>
-                
-        </form>
-       
+            <button type="submit" class="btn btn-primary">Iniciar Sesion</button>
+        </form>   
     </div>
      <br>
-     <img src="img/tarjeta.png" class="card-img-top img" >
+     <img src="img/lolololol.png" class="card-img-top img" >
 </div>

@@ -1,7 +1,6 @@
 <?php
 session_start();
 
-
 class controladorprivado
 {
 	private $vista;

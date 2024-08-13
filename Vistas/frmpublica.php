@@ -9,28 +9,28 @@
       
     
 
-    <title> Banco </title>
+    <title> Prestamos </title>
 </head>
 
-<body>
+<body>  
 
 <!-- Barra superior fija con opciones principales de menú -->
 <nav class="cabecera-color navbar navbar-expand-lg navbar-dark p-4 " >
 <div class="container">
     
-    <a href="#"><img src="img/electra.png" alt="logo black fire" class="tamaño"></a>
+    <a href="#"><img src="img/bbva-logoazul2.png" alt="logo black fire" class="tamaño"></a>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav ml-2">
             <li class="nav-item active">
-                <a class="nav-link" href="/Banco/index?clase=controladorpublico&metodo=inicio">Inicio </a>
+                <a class="nav-link" href="/prestamos/index?clase=controladorpublico&metodo=inicio">Inicio </a>
             </li>
             
             <!--<li class="nav-item active">
-                <a class="nav-link" href="/Banco/index?clase=controladorpublico&metodo=Anuncios">Anuncios</a>
+                <a class="nav-link" href="/prestamos/index?clase=controladorpublico&metodo=Anuncios">Anuncios</a>
             </li>-->
 
             <li class="nav-item active">
-                <a class="nav-link" href="/Banco/index?clase=controladorpublico&metodo=login">Login</a>
+                <a class="nav-link" href="/prestamos/index?clase=controladorpublico&metodo=login">Login</a>
             </li>
            
 
