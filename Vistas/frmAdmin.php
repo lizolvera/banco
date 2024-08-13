@@ -1,6 +1,5 @@
 <?php
-    
-   
+       
     if (!isset($_SESSION['id'])) {
     header("Location: index.php"); 
 
@@ -51,11 +50,8 @@
   </div>
 </nav>
 
-
 <!-- Este es el cuerpo -->
     <?php include_once($vista); ?> 
-
-
 
 <!-- Este es el pie de la pagina -->
 <footer>

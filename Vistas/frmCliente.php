@@ -27,21 +27,21 @@
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="/Banco/index?clase=controladorprivado&metodo=inicio">Inicio</a>
+          <a class="nav-link" href="/prestamos/index?clase=controladorprivado&metodo=inicio">Inicio</a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="/Banco/index?clase=controladorcliente&metodo=AgregarMovimientos&op=1">Retiros</a>
+          <a class="nav-link" href="/prestamos/index?clase=controladorcliente&metodo=AgregarMovimientos&op=1">Retiros</a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="/Banco/index?clase=controladorcliente&metodo=AgregarMovimientos&op=2">Depósitos</a>
+          <a class="nav-link" href="/prestamos/index?clase=controladorcliente&metodo=AgregarMovimientos&op=2">Depósitos</a>
         </li>
         <li class="nav-item active">    
-          <a class="nav-link" href="/Banco/index?clase=controladorreportes&metodo=reporteCuenta&op=3">Estado de cuenta</a>
+          <a class="nav-link" href="/prestamos/index?clase=controladorreportes&metodo=reporteCuenta&op=3">Estado de cuenta</a>
         </li>
       </ul>
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="/Banco/index?clase=controladorprivado&metodo=cerrar">Cerrar sesión</a>
+          <a class="nav-link" href="/prestamos/index?clase=controladorprivado&metodo=cerrar">Cerrar sesión</a>
         </li>
         <li class="nav-item active">
           <a class="nav-link" href=""><?php echo 'Bienvenido '.$_SESSION['nombre'] ?></a>
