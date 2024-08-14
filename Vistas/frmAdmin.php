@@ -28,10 +28,10 @@
           <a class="nav-link" href="/prestamos/index?clase=controladorprivado&metodo=inicio">Inicio</a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="/prestamos/index?clase=controladorprestamos&metodo=reporteCuenta&op=1">Alta Prestamos</a>
+          <a class="nav-link" href="/prestamos/index?clase=controladoradmin&metodo=AgregarClientes&op=1">Alta Clientes</a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="/prestamos/index?clase=controladorcliente&metodo=AgregarMovimientos&op=2">Alta Clientes</a>
+          <a class="nav-link" href="/prestamos/index?clase=controladoradmin&metodo=AgregarPrestamos&op=2">Alta Prestamos</a>
         </li>
         <li class="nav-item active">    
           <a class="nav-link" href="/prestamos/index?clase=controladorreportes&metodo=reporteCuenta&op=3">Estado de cuenta</a>

@@ -18,7 +18,7 @@
             <label for="exampleFormControlTextarea1">Ingresa cantidad de Prestamo</label>
             <input type="text" name="txtPrestamo" class="form-control" placeholder="Ingresa la cantidad de prestamo" maxlength="16" onkeypress="return soloNumeros(event)">
           </div>
-          <input type="submit" name="btnAltaP" value="Ver" class="btn btn-outline-primary">
+          <input type="submit" name="btnAltaP" value="Agregar" class="btn btn-outline-primary">
         </form>
       </div>
     </div>
