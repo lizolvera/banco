@@ -22,9 +22,9 @@
           
           <div class="form-group">
             <label for="exampleFormControlTextarea1">Ingresa la cantidad a Abonar</label>
-            <input type="text" name="txtTotal" class="form-control" placeholder="Ingresa la cantidad a abonar" maxlength="6" onkeypress="return soloNumeros(event)">
+            <input type="text" name="txtAbono" class="form-control" placeholder="Ingresa la cantidad a abonar" maxlength="6" onkeypress="return soloNumeros(event)">
           </div>
-          <input type="submit" name="btnRetirar" value="Abonar" class="btn btn-outline-primary">
+          <input type="submit" name="btnAbonar" value="Abonar" class="btn btn-outline-primary">
         </form>
       </div>
     </div>

@@ -8,7 +8,6 @@ class controladorcliente {
     public function AgregarMovimientos() {
         $cliente = new clsCliente();
         $datoID = $_SESSION['id'];
-        $datoNombre = $_SESSION['nombre'];
 
         // Obtener el número de cuenta del cliente logueado
         $aidiCliente = $cliente->obtenerIdCliente($datoID);
@@ -18,25 +17,16 @@ class controladorcliente {
         if (!empty($_POST)) {
             
             $idC = $_POST['txtId'];
-            $prestamoC = $_POST['txtPrestamo'];
+            $abono = $_POST['txtAbono'];
 
-            // Verificar si el número de cuenta ingresado es igual al del cliente logueado
             // son 3 === para ver si el valor como el tipo de datos son iguales 
             if ($idC === $aidiCliente) {
-                // Obtener el saldo actual de la cuenta
-                $saldoActual = $cliente->obtenerSaldo($noC);
-                $saldo = $saldoActual;
-
-                if (isset($_POST['btnDepositar'])) {
-                    $result = $cliente->RealizarMovimientos($noC, $total, 'DEPOSITO');
+                // Realizar el abono
+                $result = $cliente->RealizarMovimientos($idC, $prestamoC, $abono);
+                if ($result) {
+                    echo "<script>alert('Abono realizado con éxito.');</script>";
                 } else {
-                    // Checar si el saldo es suficiente para el retiro
-                    if ($saldoActual >= $total) {
-                        $result = $cliente->RealizarMovimientos($noC, $total, 'RETIRO');
-                    } else {
-                        // Si el saldo no es suficiente, se pone el error de saldo insuficiente
-                        echo "<script>alert('Saldo insuficiente para realizar el retiro.');</script>";
-                    }
+                    echo "<script>alert('Error al realizar el abono.');</script>";
                 }
 
             } else {

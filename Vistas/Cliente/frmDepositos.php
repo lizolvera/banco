@@ -24,9 +24,9 @@
           </div>
           <div class="form-group">
             <label for="exampleFormControlTextarea1">Ingresa la cantidad que desea pedir</label>
-            <input type="text" name="txtTotal" class="form-control" placeholder="Ingresa la cantidad a pedir" maxlength="6" onkeypress="return soloNumeros(event)">
+            <input type="text" name="txtPrestamo" class="form-control" placeholder="Ingresa la cantidad a pedir" maxlength="6" onkeypress="return soloNumeros(event)">
           </div>
-          <input type="submit" name="btnDepositar" value="Prestamo" class="btn btn-outline-primary">
+          <input type="submit" name="btnPrestar" value="Prestamo" class="btn btn-outline-primary">
         </form>
       </div>
     </div>

@@ -3,17 +3,22 @@ include_once 'Modelo/clsconexion.php';
 
 class clsCliente extends clsconexion{
 
-	public function RealizarMovimientos($idC,$total,$movimiento) {
-		$result = $this->conectar->query("CALL spInsertaMovimientos('$noC',$total,'$movimiento');");
-		
-		return $result;   
-	}
+    public function RealizarMovimientos($idC, $prestamo, $abono) {
+        $result = $this->conectar->query("CALL spIngresaAbono('$idC', '$prestamo', '$abono', NOW());");
+        return $result;   
+    }
+    
     public function obtenerIdCliente($idCliente) {
         $result = $this->conectar->query("SELECT idcliente FROM tblclientes WHERE idcliente = '$idCliente'");
         $idDelCliente = $result->fetch_assoc();
         return $idDelCliente['idcliente'];
     }
 
+    public function obtenerSaldo($idC) {
+        $result = $this->conectar->query("SELECT Resta FROM tblprestamos WHERE idcliente = '$idC'");
+        $saldo = $result->fetch_assoc();
+        return $saldo['Resta'];
+    }    
 ///esto le añadi yo
 /* 
     public function obtenerSaldo($noC) {
