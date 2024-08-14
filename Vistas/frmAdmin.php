@@ -31,7 +31,7 @@
           <a class="nav-link" href="/prestamos/index?clase=controladoradmin&metodo=AgregarClientes&op=1">Alta Clientes</a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="/prestamos/index?clase=controladoradmin&metodo=AgregarPrestamos&op=2">Alta Prestamos</a>
+          <a class="nav-link" href="/prestamos/index?clase=controladoradmin2&metodo=AgregarPrestamo&op=2">Alta Prestamos</a>
         </li>
         <li class="nav-item active">    
           <a class="nav-link" href="/prestamos/index?clase=controladorreportes&metodo=reporteCuenta&op=3">Estado de cuenta</a>

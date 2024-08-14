@@ -12,12 +12,18 @@
         <p>Oscar David y Lizbet </p>
       </div>
       <div class="col-6">
-        <form action="/Banco/index?clase=controladorreportes&metodo=reporteCuenta" method="post" name="form1" id="form1" enctype="multipart/form-data">
+        <form action="/prestamos/index?clase=controladoradmin2&metodo=AgregarPrestamo" method="post" name="form1" id="form1" enctype="multipart/form-data">
           
         <div class="form-group">
             <label for="exampleFormControlTextarea1">Ingresa cantidad de Prestamo</label>
             <input type="text" name="txtPrestamo" class="form-control" placeholder="Ingresa la cantidad de prestamo" maxlength="16" onkeypress="return soloNumeros(event)">
           </div>
+
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Ingresa el id de cliente</label>
+            <input type="text" name="txtidc" class="form-control" placeholder="Ingresa la id" maxlength="16" onkeypress="return soloNumeros(event)">
+          </div>
+
           <input type="submit" name="btnAltaP" value="Agregar" class="btn btn-outline-primary">
         </form>
       </div>
