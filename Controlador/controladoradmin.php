@@ -31,7 +31,11 @@ class controladoradmin {
                 $vista = "Vistas/Admin/frmAltaCliente.php";
             } else if ($_GET['op'] == 2) {
                 $vista = "Vistas/Admin/frmAltaPrestamos.php";
-            } else {
+            } else if ($_GET['op'] == 3) {
+                $vista = "Vistas/Admin/frmReportesAbono.php";
+            } else if ($_GET['op'] == 4) {
+                $vista = "Vistas/Admin/frmReportesPrestamo.php";
+            }else {
                 $vista = "Vistas/Admin/frmAltaPrestamos.php";
             }
             include_once("Vistas/frmAdmin.php");

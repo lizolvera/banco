@@ -1,6 +1,4 @@
 <?php
-    
-   
     if (!isset($_SESSION['id'])) {
     header("Location: index.php"); 
 
@@ -30,13 +28,13 @@
           <a class="nav-link" href="/prestamos/index?clase=controladorprivado&metodo=inicio">Inicio</a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="/prestamos/index?clase=controladorcliente&metodo=AgregarMovimientos&op=1">Abono</a>
+          <a class="nav-link" href="/prestamos/index?clase=controladorcliente&metodo=AgregarAbono&op=1">Abono</a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="/prestamos/index?clase=controladorcliente&metodo=AgregarMovimientos&op=2">Prestamo</a>
+          <a class="nav-link" href="#"></a>
         </li>
         <li class="nav-item active">    
-          <a class="nav-link" href="/prestamos/index?clase=controladorreportes&metodo=reporteCuenta&op=3">Estado de cuenta</a>
+          <a class="nav-link" href="#"></a>
         </li>
       </ul>
       <ul class="navbar-nav ml-auto">

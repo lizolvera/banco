@@ -8,25 +8,30 @@
           <img src="img/tarjeta.png" class="card-img-top img">
           <div id="numeroCuenta" class="position-absolute" style="top: 60%; left: 50%; transform: translate(-50%, -50%); font-size: 34px; color: black;">
             <!-- Aquí se mostrará el número de cuenta -->
-
+          
           </div>
         </div>
         <p>20221019@uthh.edu.mx</p>
       </div>
       <div class="col-6">
       
-        <form action="/prestamos/index?clase=controladorcliente&metodo=AgregarMovimientos" method="post" name="form1" id="form1" enctype="multipart/form-data">
+        <form action="/prestamos/index?clase=controladorcliente&metodo=AgregarAbono" method="post" name="form1" id="form1" enctype="multipart/form-data">
          
-
         <div class="form-group">
             <label for="exampleFormControlTextarea1">Id Cliente</label>
-            <input type="text" name="txtid" value="<?php echo $datoID; ?>" class="form-control" placeholder="ingresa tu id" maxlength="4" onkeypress="return soloNumeros(event)">
+            <input type="text" name="txtId" value="<?php echo $datoID; ?>" class="form-control" placeholder="ingresa tu id" maxlength="4" onkeypress="return soloNumeros(event)">
           </div>
+
           <div class="form-group">
-            <label for="exampleFormControlTextarea1">Ingresa la cantidad que desea pedir</label>
-            <input type="text" name="txtPrestamo" class="form-control" placeholder="Ingresa la cantidad a pedir" maxlength="6" onkeypress="return soloNumeros(event)">
+            <label for="exampleFormControlTextarea1">Id Prestamo</label>
+            <input type="text" name="txtIdP" value="<?php echo $datoID; ?>" class="form-control" placeholder="ingresa tu id" maxlength="4" onkeypress="return soloNumeros(event)">
           </div>
-          <input type="submit" name="btnPrestar" value="Prestamo" class="btn btn-outline-primary">
+
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Ingresa la cantidad que desea abonar</label>
+            <input type="text" name="txtAbono" class="form-control" placeholder="Ingresa la cantidad a abonar" maxlength="6" onkeypress="return soloNumeros(event)">
+          </div>
+          <input type="submit" name="btnPrestar" value="Abonar" class="btn btn-outline-primary">
         </form>
       </div>
     </div>
