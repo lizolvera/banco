@@ -19,7 +19,6 @@ class controladorcliente {
             $idP = $_POST['txtIdP'];
             $abono = $_POST['txtAbono'];
 
-
             // son 3 === para ver si el valor como el tipo de datos son iguales 
             if ($idC === $aidiCliente) {
                 // Realizar el abono

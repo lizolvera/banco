@@ -8,5 +8,9 @@ class clsReportes extends clsconexion {
         return $result; 
     }
 
+    public function reportePrestamos(){
+        $result = $this->conectar->query("CALL spObtenerIdPrestamoCliente();");
+        return $result;
+    }
 }
 ?>

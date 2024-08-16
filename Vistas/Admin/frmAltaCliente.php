@@ -32,7 +32,7 @@
 
             <div class="form-group">
                 <label for="exampleFormControlTextarea1">Ingresa el rol: admin/usuario</label>
-                <input type="text" name="txtRol" class="form-control" placeholder="Ingresa el apellido rol" maxlength="16" onkeypress="return soloLetras(event)">
+                <input type="text" name="txtRol" class="form-control" placeholder="Ingresa el rol" maxlength="16" onkeypress="return soloLetras(event)">
             </div>
             <input type="submit" name="btnAltaC" value="agregar" class="btn btn-outline-primary">
         </form>

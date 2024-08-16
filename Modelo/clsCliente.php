@@ -4,7 +4,7 @@ include_once 'Modelo/clsconexion.php';
 class clsCliente extends clsconexion{
 
     public function RealizarMovimientos($idC, $idprestamo, $abono) {
-        $result = $this->conectar->query("CALL spIngresaAbono('$idC', '$idprestamo', '$abono', NOW());");
+        $result = $this->conectar->query("CALL spInsertaAbono('$idC', '$idprestamo', '$abono', NOW());");
         return $result;   
     }
     
