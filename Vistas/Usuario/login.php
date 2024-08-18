@@ -7,7 +7,13 @@
             <div class="form-group">
                 <label for="exampleInputPassword1">Ingrese su Usuario</label>
                 <input type="text" name="txtNombre" class="form-control" id="exampleInputPassword1" maxlength="120" placeholder="Ingrese su usuario">
-            </div>
+            </div>  
+
+            <div class="form-group">
+                <label for="exampleInputPassword1">Ingrese su Contraseña</label>
+                <input type="password" name="txtContra" class="form-control" id="exampleInputPassword1" maxlength="120" placeholder="Ingrese su contraseña">
+            </div>  
+
             <button type="submit" class="btn btn-primary">Iniciar Sesion</button>
         </form>   
     </div>

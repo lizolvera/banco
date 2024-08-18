@@ -4,8 +4,8 @@ include_once 'Modelo/clsconexion.php';
 class clsAdmin extends clsconexion {
 
 
-    public function ingresarClientes($nombre, $ap, $am, $rol) {
-        $result = $this->conectar->query("CALL spAltaClientes('$nombre', '$ap', '$am', '$rol');");
+    public function ingresarClientes($nombre, $ap, $am, $rol,$contrasenia) {
+        $result = $this->conectar->query("CALL spAltaClientes('$nombre', '$ap', '$am', '$rol','$contrasenia');");
         return $result;   
     }
 

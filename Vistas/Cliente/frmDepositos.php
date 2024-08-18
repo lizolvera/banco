@@ -5,10 +5,12 @@
         <h2>PRESTAMOS</h2>
         
         <div class="position-relative d-inline-block">
-          <img src="img/tarjeta.png" class="card-img-top img">
+          <img src="img/fondo4.png" class="card-img-top img">
           <div id="numeroCuenta" class="position-absolute" style="top: 60%; left: 50%; transform: translate(-50%, -50%); font-size: 34px; color: black;">
-            <!-- Aquí se mostrará el número de cuenta -->
-          
+            <h6>Su prestamo es de <?php echo $prestamo; ?> pesos</h6>
+            <br>
+            <h6>Usted falta por pagar <?php echo $resta; ?> pesos</h6>
+
           </div>
         </div>
         <p>20221019@uthh.edu.mx</p>

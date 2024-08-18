@@ -4,7 +4,7 @@
       <div class="col-6 text-center">
         <h2>ALTA PRESTAMOS</h2>
         <div class="position-relative d-inline-block">
-          <img src="img/tarjeta.png" class="card-img-top img">
+          <img src="img/lolololol.png" class="card-img-top img">
           <div id="numeroCuenta" class="position-absolute" style="top: 60%; left: 50%; transform: translate(-50%, -50%); font-size: 34px; color: black;">
             <!-- Aquí se mostrará el Prestamo -->
           </div>

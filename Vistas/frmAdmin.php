@@ -30,7 +30,7 @@
                     <a class="nav-link active" href="/prestamos/index?clase=controladorprivado&metodo=inicio1">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="/prestamos/index?clase=controladoradmin&metodo=AgregarClientes&op=1">Alta Clientes</a>
+                    <a class="nav-link active" href="/prestamos/index?clase=controladoradmin&metodo=AgregarClientes&op=1">Alta Usuario</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active" href="/prestamos/index?clase=controladoradmin2&metodo=AgregarPrestamo&op=2">Alta Prestamos</a>
